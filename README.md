@@ -20,5 +20,5 @@ Music track but with any integers lower than lpf is == lpf and any integers high
 
 filter([35, 50, 50]) => [40, 50, 55]
 
-filter (5, [45, 50, 55]) => [45, 50, 55]
+filter ([45, 50, 55], 5) => [45, 50, 55]
 
