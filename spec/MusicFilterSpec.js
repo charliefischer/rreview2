@@ -10,4 +10,8 @@ describe('MusicFilter', function() {
   it('returns the track with lpf working', function() {
     expect(filter.track([35, 50, 50])).toEqual([40, 50, 50])
   })
+
+  it('returns the track with the hpf working', function() {
+    expect(filter.track([50, 50, 1050])).toEqual([50, 50, 1000])
+  })
 })
